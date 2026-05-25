@@ -1,4 +1,4 @@
-# HSCM — Generative AI Essentials for Non-Technologists
+# Generative AI Essentials with Copilot - General
 
 ## Student Demo Handout
 
@@ -14,23 +14,23 @@ This handout contains every prompt that will be demoed during the session. Copy 
 
 Files referenced in this handout will be distributed separately. The 📎 callout box at the top of a demo tells you which file to attach. Demos without a callout don't need a file.
 
-A few demos run as a **sequence** — a first prompt, then a follow-up in the same chat. Where that's the case, the steps are labeled in order. Run them one after another in the same conversation.
+A few demos run as a **sequence**—a first prompt, then a follow-up in the same chat. Where that's the case, the steps are labeled in order. Run them one after another in the same conversation.
 
 > **Reminder:** Copilot is a starting point, never the final word. Everything you generate here is reviewed by a human — you — before it goes anywhere. Only put **Public** data into a prompt; anything created at HSCM or received in the course of your job is **Confidential** by default.
 
 ---
 
-## **Part 1 — Prompting Mechanics**
+## **Part 1: Prompting Mechanics**
 
-### **Demo 1 — Same prompt, different answers (non-determinism)**
+### **Demo 1: Same prompt, different answers (non-determinism)**
 
-Run this exact prompt twice. The two responses will differ — that's not a bug, it's how the technology works. An LLM is probabilistic, not deterministic, which is the first reason you can never blindly trust the output. No file needed.
+Run this exact prompt twice. The two responses will differ—that's not a bug, it's how the technology works. An LLM is probabilistic, not deterministic, which is the first reason you can never blindly trust the output. No file needed.
 
 ```
 What are 3 catchy names for a new internal initiative focused on improving DDQ response turnaround times?
 ```
 
-### **Demo 2 — Structure changes everything**
+### **Demo 2: Structure changes everything**
 
 Three versions of the same request, each more structured than the last. Run them in order and compare the outputs. Level 3 uses the **GCSE** framework (Goal, Context, Source, Expectations). No file needed.
 
@@ -66,7 +66,7 @@ Draft a follow-up email to a long-standing LP who hasn't responded to two previo
 - Under 200 words, include subject line
 ```
 
-### **Demo 3 — Language tunes the answer to the audience**
+### **Demo 3: Language tunes the answer to the audience**
 
 Same topic, three different framings. Run all three and notice how different the responses are — each one is shaped for a different reader. No file needed.
 
@@ -90,19 +90,19 @@ Explain what an insurance-linked security is for a section of an investor update
 
 ---
 
-## **Part 2 — Recognizing Bias**
+## **Part 2: Recognizing Bias**
 
-### **Demo 4 — Bias in the data**
+### **Demo 4: Bias in the data**
 
-A broad question that surfaces bias baked into the training data. Run it and look at whether the list skews by gender, region, or era. The model isn't being intentionally biased — it's reflecting patterns in what it was trained on. No file needed.
+A broad question that surfaces bias baked into the training data. Run it and look at whether the list skews by gender, region, or era. The model isn't being intentionally biased—it's reflecting patterns in what it was trained on. No file needed.
 
 ```
 Who are the top 10 hedge fund managers of all time?
 ```
 
-### **Demo 5 — Interpretation bias**
+### **Demo 5: Interpretation bias**
 
-A deliberately vague request. Watch how the model *guesses* what you meant — weather? a loss forecast? an economic outlook? The interpretation it picks reveals its assumptions, which is exactly why specificity matters. No file needed.
+A deliberately vague request. Watch how the model *guesses* what you meant—weather? a loss forecast? an economic outlook? The interpretation it picks reveals its assumptions, which is exactly why specificity matters. No file needed.
 
 ```
 Give me today's forecast.
@@ -110,9 +110,9 @@ Give me today's forecast.
 
 ---
 
-## **Part 3 — Iterating, Meta-Prompting & Templates**
+## **Part 3: Iterating, Meta-Prompting, and Templates**
 
-### **Demo 6 — Let the AI help you write the prompt (meta-prompting)**
+### **Demo 6: Let the AI help you write the prompt (meta-prompting)**
 
 When you're not sure how to structure a prompt, ask the model to interview you first. Run Step 1, answer its questions one at a time, then run Step 2 to get a polished, reusable prompt. No file needed.
 
@@ -128,7 +128,7 @@ I want to build a reusable prompt that drafts a first-version internal meeting a
 Now use this clarity to create a detailed prompt in a code block that I can use. Do not use emojis.
 ```
 
-### **Demo 7 — Templatize a prompt that works**
+### **Demo 7: Templatize a prompt that works**
 
 Once a prompt works, don't rewrite it from scratch every time — turn the changing parts into placeholders so your team can reuse it. Compare the one-off version with the templatized version. No file needed.
 
@@ -148,9 +148,9 @@ Ask the user to fill in the placeholders before generating the email.
 
 ---
 
-## **Part 4 — Context, Hallucinations & Guardrails**
+## **Part 4: Context, Hallucinations, and Guardrails**
 
-### **Demo 8 — Drafting without context (hallucination risk)**
+### **Demo 8: Drafting without context (hallucination risk)**
 
 The model has never seen "InsightEdge," so it fills the gaps with generic, made-up specifics. That's a **hallucination** — confident, fluent, and wrong. Run it and look closely at how little of the output is actually about a real product. No file needed.
 
@@ -158,20 +158,20 @@ The model has never seen "InsightEdge," so it fills the gaps with generic, made-
 Write a blog post announcing the launch of our new portfolio analytics tool, InsightEdge. We want to excite potential clients about modernizing their portfolio monitoring, especially those who have been relying on traditional manual reporting. Highlight its main features like automated performance attribution and real-time risk monitoring. Include a call to action to schedule a demo.
 ```
 
-### **Demo 9 — Add a guardrail**
+### **Demo 9: Add a guardrail**
 
-The same prompt with one extra instruction — "if you don't know, say so." Watch how that single guardrail changes the behavior completely. No file needed.
+The same prompt with one extra instruction—"if you don't know, say so." Watch how that single guardrail changes the behavior completely. No file needed.
 
 ```
 Write a blog post announcing the launch of our new portfolio analytics tool, InsightEdge. We want to excite potential clients about modernizing their portfolio monitoring, especially those who have been relying on traditional manual reporting. Highlight its main features like automated performance attribution and real-time risk monitoring. Include a call to action to schedule a demo. If you don't know who that that product is or you don't have accurate information about that product, then respond with "I don't have reliable information about this product."
 ```
 
-### **Demo 10 — Drafting WITH context and guardrails**
+### **Demo 10: Drafting WITH context and guardrails**
 
 | 📎 File required: InsightEdge Product.docx |
 | :---- |
 
-Now the model has real information to work from. Attach the product specification, then run the prompt. The output should be specific and accurate — but you should still check it.
+Now the model has real information to work from. Attach the product specification, then run the prompt. The output should be specific and accurate—but you should still check it.
 
 ```
 Write a blog post announcing the launch of our new portfolio analytics tool, InsightEdge. Include a call to action to schedule a demo.
@@ -188,9 +188,9 @@ Review the following product specification attached thoroughly before writing.
 
 ---
 
-## **Part 5 — Drafting With Context & Guardrails**
+## **Part 5: Drafting With Context and Guardrails**
 
-### **Demo 11 — Draft an LP email (with internal context that must stay internal)**
+### **Demo 11: Draft an LP email (with internal context that must stay internal)**
 
 | 📎 File required: Internal Memo.docx |
 | :---- |
@@ -229,7 +229,7 @@ This internal context is provided **only to inform tone and positioning**. It mu
   **"I don't have enough information to draft this email without risking internal data exposure."**
 ```
 
-### **Demo 12 — Draft IC meeting talking points (context in the prompt)**
+### **Demo 12: Draft IC meeting talking points (context in the prompt)**
 
 When you don't have a separate document to attach, you put the context directly into the prompt. No file needed.
 
@@ -262,9 +262,9 @@ Create talking points for a 30-minute internal investment committee discussion o
 
 ---
 
-## **Part 6 — Summarization**
+## **Part 6: Summarization**
 
-### **Demo 13 — One document, three audiences**
+### **Demo 13: One document, three audiences**
 
 | 📎 File required: Swiss Re ILS Market Insights (February 2026 edition) |
 | :---- |
@@ -325,7 +325,7 @@ The summary will be used in an onboarding session for new hires in their first m
 - End with 2-3 questions the new hire should bring to their first meeting with the deal team
 ```
 
-### **Demo 14 — Summarize a long email chain**
+### **Demo 14: Summarize a long email chain**
 
 This prompt is designed to run against an Outlook conversation (e.g., a thread with "Project Aurora" in the subject) using Copilot's access to your mailbox. No file to attach — point Copilot at the thread, then run the prompt.
 
@@ -366,7 +366,7 @@ If you cannot summarize the thread without making assumptions, respond with:
 **"The email chain does not contain enough explicit information to produce a reliable summary."**
 ```
 
-### **Demo 15 — Turn messy meeting notes into structured minutes**
+### **Demo 15: Turn messy meeting notes into structured minutes**
 
 | 📎 File required: handwritten-meeting-notes.jpg |
 | :---- |
@@ -400,9 +400,9 @@ Transform these rough handwritten meeting notes into a structured summary.
 
 ---
 
-## **Part 7 — Answering Questions From a Source**
+## **Part 7: Answering Questions From a Source**
 
-### **Demo 16 — Build a grounded knowledge-base assistant**
+### **Demo 16: Build a grounded knowledge-base assistant**
 
 | 📎 File required: Swiss Re ILS Market Insights (February 2026 edition) |
 | :---- |
@@ -463,9 +463,9 @@ What's HSCM's view on this market?
 
 ---
 
-## **Part 8 — Editing & Refining**
+## **Part 8: Editing and Refining**
 
-### **Demo 17 — Tone adjustment: declining a prospective investor**
+### **Demo 17: Tone adjustment: declining a prospective investor**
 
 | 📎 File required: Email.txt |
 | :---- |
@@ -515,7 +515,7 @@ The rewritten email:
 - If the source email is missing essential details (e.g. unclear sign‑off, missing future engagement guidance, ambiguous wording), ask a brief clarifying question before rewriting rather than making assumptions
 ```
 
-### **Demo 18 — Communication consistency against a style guide**
+### **Demo 18: Communication consistency against a style guide**
 
 | 📎 Files required: Communications Style Guide.docx, Internal Announcement.docx |
 | :---- |
@@ -561,9 +561,9 @@ The revised announcement:
 
 ---
 
-## **Part 9 — Code & Technical Content**
+## **Part 9: Code and Technical Content**
 
-### **Demo 19 — Excel formulas and analysis in plain English**
+### **Demo 19: Excel formulas and analysis in plain English**
 
 | 📎 File required: ILS_Market_Data_Sample.xlsx |
 | :---- |
@@ -611,9 +611,9 @@ For data work, telling the model what each column means produces noticeably bett
 
 ---
 
-## **Part 10 — Classifying & Categorizing**
+## **Part 10: Classifying and Categorizing**
 
-### **Demo 20 — Sentiment classification with few-shot prompting**
+### **Demo 20: Sentiment classification with few-shot prompting**
 
 This prompt provides a few examples of input → output to guide the model — that's **few-shot prompting**. The examples set the pattern; the model applies it to the new comments. No file needed.
 
@@ -643,9 +643,9 @@ Classify only from the text. If a comment is genuinely ambiguous, label it Neutr
 
 ---
 
-## **Part 11 — Extracting Structured Data**
+## **Part 11: Extracting Structured Data**
 
-### **Demo 21 — Map the structure of a DDQ**
+### **Demo 21: Map the structure of a DDQ**
 
 | 📎 File required: ILPA-DDQ-2.0.pdf (extract only the relevant section — e.g., pages 20–23) |
 | :---- |
@@ -690,11 +690,11 @@ Use the attached DDQ as the sole source. The output will be used to build an int
 
 ---
 
-## **Part 12 — Capturing & Improving a Process**
+## **Part 12: Capturing and Improving a Process**
 
 This is a four-step workflow. Each prompt feeds the next, so run them **in order, in the same conversation**: capture the process → visualize it → find the friction → propose a simpler version. No files needed — the process description is embedded in Demo 22.
 
-### **Demo 22 — Capture an "as-is" process from a messy description**
+### **Demo 22: Capture an "as-is" process from a messy description**
 
 ```
 ## Goal
@@ -734,7 +734,7 @@ Produce a numbered list of steps in the order they happen. For each step, includ
 - At the very end, add a section titled "Gaps to clarify with the SME" that lists every [unclear] item plus any ambiguity you noticed that a new hire would trip over.
 ```
 
-### **Demo 23 — Visualize the process as a flowchart**
+### **Demo 23: Visualize the process as a flowchart**
 
 ```
 ## Goal
@@ -765,7 +765,7 @@ The numbered as-is process map from the previous step. Every box in the diagram 
 - Use short, simple IDs for boxes (like S, A1, D1, W1). Only put words and spaces in the LABELS, never in the IDs.
 ```
 
-### **Demo 24 — Identify friction in the process**
+### **Demo 24: Identify friction in the process**
 
 ```
 ## Goal
@@ -801,7 +801,7 @@ Impact: High / Medium / Low, based on a combination of time cost and error risk.
 - Aim for 5–10 issues. If there are fewer real ones, return fewer. Do not pad.
 ```
 
-### **Demo 25 — Propose a simplified "to-be" process**
+### **Demo 25: Propose a simplified "to-be" process**
 
 ```
 ## Goal
