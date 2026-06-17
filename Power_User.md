@@ -1,6 +1,6 @@
 
 
-# Copilot for Power Users — Advanced Prompting & Agents
+# Copilot for Power Users — Advanced Prompting and Agents
 
 ## Student Demo Handout
 
@@ -164,57 +164,57 @@ Use only the narrative briefing from the previous step.
 - Output ready to paste at the top of the briefing document.
 ```
 
-***Link 4 — Verify before finalising (Chain of Verification)***
+***Link 4 — Verify before finalizing (Chain of Verification)***
 
 ```
 ## Goal
-Before this briefing is finalised, verify it for accuracy against the source facts. You drafted it; now check the draft. Do not assume it is correct.
+Before this briefing is finalized, verify it for accuracy against the source facts. You drafted it; now check the draft. Do not assume it is correct.
 
 ## Source
 - The verified fact list from Link 1.
 - The assembled briefing (narrative + executive summary + questions) from the steps above.
 
 ## Expectations
-1. Generate a list of verification questions: one for every factual claim, figure, and characterisation in the briefing.
+1. Generate a list of verification questions: one for every factual claim, figure, and characterization in the briefing.
 2. Answer each question using ONLY the Link 1 fact list as evidence. Do NOT treat the briefing itself as evidence for its own claims.
 3. Flag every claim the fact list does not support, contradicts, or supports only partially, and quote the relevant fact, or note its absence.
 4. List any number in the briefing that does not appear, exactly, in the fact list.
 
 ## Guardrails
 - Treat the briefing as a draft to be tested, not as established truth.
-- If a claim cannot be tied to the fact list, mark it [UNSUPPORTED: human check] rather than rationalising it.
+- If a claim cannot be tied to the fact list, mark it [UNSUPPORTED: human check] rather than rationalizing it.
 - Do NOT introduce any new facts, figures, or outlook in this step. This pass only checks; it does not add.
 ```
 
-### **Demo 4 — Analyse-then-draft in Outlook**
+### **Demo 4 — Analyze-then-draft in Outlook**
 
 | ℹ Note: No file attachment — Copilot reads the thread from Outlook directly. Look for the thread with "Project Lighthouse" in the subject (Glenmara / Fund III allocation). |
 | :---- |
 
-The Outlook power-user pattern in two moves: first make the model read and analyse the thread, then make it draft a follow-up from its own analysis. Run them in order in the same conversation.
+The Outlook power-user pattern in two moves: first make the model read and analyze the thread, then make it draft a follow-up from its own analysis. Run them in order in the same conversation.
 
-***Link 1 — Analyse the thread***
+***Link 1 — Analyze the thread***
 
 ```
 ## Goal
-Analyse the email thread with "Project Lighthouse" in the subject and extract the state of play for someone who needs to catch up fast.
+Analyze the email thread with "Project Lighthouse" in the subject and extract the state of play for someone who needs to catch up fast.
 
 ## Source
 Use only the messages in this thread.
 
 ## Expectations
-Return four clearly labelled sections:
+Return four clearly labeled sections:
 - COMMITMENTS: who promised to do what, and by when (only if explicitly stated)
 - OPEN QUESTIONS: anything raised that hasn't been answered
 - DECISIONS: anything explicitly agreed
 - UNRESOLVED TENSIONS: points where participants appear to disagree
 
-Run a verification pass on your own extraction before finalising: for every item across all four sections, quote the exact line it is based on and name the sender. If an item cannot be tied to a specific line in the thread, mark it [UNSUPPORTED] and move it out of the main lists — do not keep it on the strength of a general impression.
+Run a verification pass on your own extraction before finalizing: for every item across all four sections, quote the exact line it is based on and name the sender. If an item cannot be tied to a specific line in the thread, mark it [UNSUPPORTED] and move it out of the main lists — do not keep it on the strength of a general impression.
 
 ## Guardrails
 - Only extract what is explicitly written. Do not infer commitments, owners, or deadlines that aren't stated.
 - If a section has no items, write "None explicitly stated" rather than inventing entries.
-- Do not editorialise on people's tone or motives.
+- Do not editorialize on people's tone or motives.
 ```
 
 ***Link 2 — Draft the follow-up (feeding Link 1)***
@@ -250,7 +250,7 @@ Copilot in Word can take an existing document and update it against a new input 
 
 ```
 ## Persona
-Act as a compliance analyst updating internal guidance to reflect a new regulatory requirement, working carefully and conservatively because every edit will be reviewed by a senior reviewer before anything is finalised.
+Act as a compliance analyst updating internal guidance to reflect a new regulatory requirement, working carefully and conservatively because every edit will be reviewed by a senior reviewer before anything is finalized.
 
 ## Goal
 Update the attached internal guidance document so it aligns with the new requirement described in the second attachment. Make the changes directly in the document. (Track Changes is switched on in Word, so each edit you make will be captured as a tracked change for human approval.)
@@ -284,7 +284,7 @@ Copilot Pages turns a good chat answer into a persistent, shareable, collaborati
 
 ```
 ## Goal
-Turn the attached LP Due Diligence Questionnaire into a response-coordination tracker that the IR and operations team can work on together in a CoPilot Page. This is a planning and ownership document, not the answers themselves.
+Turn the attached LP Due Diligence Questionnaire into a response-coordination tracker that the IR and operations team can work on together in a Copilot Page. This is a planning and ownership document, not the answers themselves.
 
 ## Source
 Use only the attached DDQ. Work from its section structure and questions.
@@ -296,7 +296,7 @@ Use only the attached DDQ. Work from its section structure and questions.
   - Suggested owner (the team or role best placed to respond; e.g. IR, Operations,
     Finance, Compliance, Legal, ESG lead)
   - Status (default every row to "Not started")
-- Format it as a clean table suitable for a CoPilot Page the team will edit together.
+- Format it as a clean table suitable for a Copilot Page the team will edit together.
 
 ## Guardrails
 - Do NOT draft or attempt any actual answers. This is a coordination and ownership map only.
@@ -336,12 +336,12 @@ Prepare a structured market-intelligence briefing on cyber catastrophe bonds / c
 
 ## Scope and Sources
 - From the web: recent market size, structural trends, notable transactions, and risk themes in this sector.
-- From my work content: identify any comparable past internal analyses or precedents on similar opportunities, and note their existence and structure: do NOT reproduce confidential figures or client-identifying detail in the briefing.
+- From my work content: identify any comparable past internal analyzes or precedents on similar opportunities, and note their existence and structure: do NOT reproduce confidential figures or client-identifying detail in the briefing.
 
 ## Expectations
 - Deliver a structured, source-cited report with these sections: Market overview, Key trends, Risk themes, Comparable precedents (existence and approach only), Open questions for the deal team.
 - Cite every external claim. Mark anything you couldn't verify as [unverified].
-- End with the 5 questions a sceptical investment committee would ask first.
+- End with the 5 questions a skeptical investment committee would ask first.
 - Then run a verification pass on your own report: list the three claims you are LEAST confident in, state what additional source would confirm or refute each, and give every section an overall reliability label (High / Medium / Low).
 
 ## Guardrails
@@ -484,7 +484,7 @@ Step 3 - Build the final update:
 Standing guardrails (apply to every step):
 - Use only [EmailContent]; do not invent updates, dates, owners, or facts.
 - If a section has nothing explicitly stated, write "None this period."
-- Confidential-by-default: nothing leaves HSCM's licensed CoPilot environment; the user reviews and sends.
+- Confidential-by-default: nothing leaves HSCM's licensed Copilot environment; the user reviews and sends.
 ```
 
 ### **Demo 13 — The Workflows agent (live exercise)**
